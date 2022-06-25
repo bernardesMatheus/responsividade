@@ -20,7 +20,7 @@
             height: 80vh;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-start;
 
             /*Padrão*/
             align-items: flex-start;
@@ -40,19 +40,22 @@
 
         .flex-container .sm-content{
             font-size: 1em;
-            /* align-self: flex-end; */
+            align-self: flex-end;
         }
         
         .grow{
-            flex-grow: 1;
+            flex-grow: 2;
         }
     </style>
 
 	<body>
 		<section class="flex-container">
 			<div class="sm-content">1</div>
-			
-			<div class="sm-content grow">6</div>
+			<div class="grow">2</div>
+			<div class="bg-content">3</div>
+			<div>4</div>
+			<div class="bg-content">5</div>
+			<div class="sm-content">6</div>
 		</section>
 	</body>
 </html>
